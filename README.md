@@ -1,3 +1,3 @@
-# grupo_13_nombre
-E-commerce creada usando node.js y react.
-:)
+# Cafo, tienda de café
+
+E-commerce creada por: ### Julian ### Elizabeth y ### Juliana
