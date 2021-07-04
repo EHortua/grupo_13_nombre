@@ -24,6 +24,6 @@
 * Faltar a las clases que son de trabajo en grupo.
 * No comunicarse.
 
-### Modelo visual reliazado en la clase de Habilidades Blandas
+### Modelo visual realizado en la clase de Habilidades Blandas
 ![star](/public/images/star.png)
 
