@@ -23,3 +23,6 @@ Estudiante de Programación en Formar y de Contaduría en la UBA , tengo 28 año
 * https://www.juanvaldezcafe.com/
 * https://latiendadelcafe.co/collections/all
 * https://www.starbucks.com.ar/
+
+### Organización del trabajo
+* https://trello.com/b/tIJmdxVj/grupo-13
