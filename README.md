@@ -29,4 +29,4 @@ Estudiante de Programación en Formar y de Contaduría en la UBA , tengo 28 año
 
 ### Diseño
 * [Colores](https://github.com/EHortua/grupo_13_three/blob/main/design/paleta%20de%20colores/Paleta.png) 
-* [Fuente](https://github.com/EHortua/grupo_13_three/blob/main/design/fuente.html)
+* [Fuente](https://github.com/EHortua/grupo_13_three/blob/main/design/fuente.md)
