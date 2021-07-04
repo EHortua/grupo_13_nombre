@@ -1,1 +1,1 @@
-![star](/images/star.png)
+![star](/public/images/star.png)
