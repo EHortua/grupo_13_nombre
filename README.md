@@ -26,3 +26,7 @@ Estudiante de Programación en Formar y de Contaduría en la UBA , tengo 28 año
 
 ### Organización del trabajo
 * https://trello.com/b/tIJmdxVj/grupo-13
+
+### Diseño
+* [Colores](https://github.com/EHortua/grupo_13_three/blob/main/design/paleta%20de%20colores/Paleta.png) 
+* [Logo](https://github.com/EHortua/grupo_13_three/blob/main/design/logo.html)
