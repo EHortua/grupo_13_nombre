@@ -4,9 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fuente -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway?subset=latinhttps://fonts.google.com/specimen/Raleway?subset=latin">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/productCart.css">
     <title>Cafe Three-Carrito</title>
 </head>
 <body>
-    
+    <img src="images/descarga.jpg" alt="">
+    <main>
+
+         <!--Carrito de la compra--> 
+        <h1>Carrito de compra</h1>  
+        <h2>Tus productos</h2>
+
+
+        <section class='productCart'>
+            <article class="art">
+                <div class='checktrash' >
+                    <input type="checkbox" name="" id="selector">
+                    <button><i class="fas fa-trash"></i></button>
+                </div>
+                <div>
+                    <img id='img' src="images/cafetera gplus.jpg" alt="Cafetera GPLUS negra">
+                </div>
+            
+                <div class="detail1">
+                    <button><i class="fa fa-heart"></i></button>
+                    <H3>$3000
+                        <select name="cantidad" id="cantidad">
+                            <option value="">cantidad</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        Total:
+                        <input type="number" name="" id="Total">
+                    </H3>
+                    <H4>Cafetera GPLUS</H4>
+                    <button>ver mas</button>
+                </div>
+            </article>
+            <article class="art">
+                
+                <input type="checkbox" name="" id="selector">
+                <button><i class="fas fa-trash"></i></button>
+                <div>
+                    <img id='img' src="images/cafe valdez.jpg" alt="Cafe valdez">
+                </div>
+                <div class="detail1">
+                    <button><i class="fa fa-heart"></i></button>
+                    <H3>$900
+                        <select name="cantidad" id="cantidad">
+                            <option value="">cantidad</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        Total:
+                        <input type="number" name="" id="Total">
+                    </H3>
+                    <H4>Cafe valdez</H4>
+                    <button>ver mas</button>
+                </div>
+            </article>
+        </section>
+        <br><br>
+        <section id='detailCart'>    
+        <!--Datos personales--> 
+            <h2>Datos de compra</h2>  
+            <br>
+            <div class='datos personales'>
+                <h4>Nombre completo :
+                    <input type="text" id="nombre" value="" size="30%" />
+                </h4>
+                <br>
+                <h4>DNI :
+                    <input type="text" id="dni" value="" size="15%" maxlength="9" />
+                    Tel :
+                    <input type="text" id="movil" value="" size="20%" maxlength="10"/>
+                </h4>
+                <br>
+                <h4>Email : 
+                    <input type="text" id="email1" value="" size="35%" />
+                </h4>
+                <br>
+                <h4>Repetir email :
+                    <input type="text" id="email2" value="" size="35%" />
+                </h4>
+            </div>
+            <br>
+            <br>
+            <div class='envio'>
+                <h4><input type="radio">Envio</h4>
+
+                <br>
+                
+                <h4>Domicilio : 
+                    <input type="text" id="Dom" value="" size="40%"/>
+                </h4>
+                <br>
+                <h4>Localidad : 
+                    <select name="" id="hs">
+                        <option value="">Elegir</option>
+                        <option value="">Lanus</option>
+                        <option value="">Avellaneda</option>
+                        <option value="">Gerli</option>
+                    </select>
+                    Codigo Postal : 
+                    <input type="text" id="codigoPostal" value="" size="5%" maxlength="5"/>
+                </h4>                
+            </div> 
+            
+            <br>
+            <br>
+
+            <div class='retiro'>
+                <h4><input type="radio">Retiro :
+                    <input type="datetime-local" name="" id="">
+                    
+                   <!-- <select name="" id="Dia">
+                        <option value="">Dia</option>
+                        <option value="">Lunes</option>
+                        <option value="">Martes</option>
+                        <option value="">Miercoles</option>
+                    </select> -->
+                    <!-- <select name="" id="Turno">
+                        <option value="">Turno</option>
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>  -->
+                    <select name="" id="Sucursal">
+                        <option value="">Sucursal</option>
+                        <option value="">Lanus</option>
+                        <option value="">Avellaneda</option>
+                        <option value="">Gerli</option>
+                    </select> 
+                </h4> 
+            </div>
+        </section> 
+        <br>
+        <br>
+        <center><button>PAGAR</button></center>
+    </main>
+    <br>
+    <footer>
+    </footer>
 </body>
 </html>

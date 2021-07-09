@@ -1,0 +1,56 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* general */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+body{
+    /* background-image: url('/images/descarga.jpg'); */
+    background-color: rgba(243, 178, 158, 0.685);
+    padding: 15px;
+    
+}
+
+.productCart{
+    align-items: center;
+    display: flex;
+/* pone los item uno al lado del otro */
+flex-wrap: wrap;
+/* acomoda los elemntos bien en cuadro */
+justify-content: space-around;
+    height: 850px;
+    padding: 30px;
+    border: 2px solid rgb(182, 134, 61);
+
+}
+
+.art{
+    align-items: stretch;
+    display: flex;
+    /* flex-direction: row-reverse;
+    para que los elementos se ordenen inversamente */
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.art:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: rgb(59, 48, 48);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    /* efecto de que al pasar la fecha sobre el item este mismo se agrande sin clickear */
+    transition: all 1.20s ease-in-out
+}
+.checktrash{
+align-items:flex-end
+}
+
+#img{
+    border-radius: 50px;
+}
