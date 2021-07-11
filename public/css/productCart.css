@@ -1,56 +1,80 @@
 /* fuente */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-/* general */
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
+
+ *{
     font-family: 'Raleway';
-}
-
-body{
-    /* background-image: url('/images/descarga.jpg'); */
-    background-color: rgba(243, 178, 158, 0.685);
-    padding: 15px;
+    box-sizing:border-box;
     
-}
+ }
+ 
+ body{
+    margin:0;
+    padding: 0;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#1b344e;
+    text-align:center;
+    background-color:rgb(245, 237, 226)
+   }
+ h1,h4,p{
+    margin-top:1rem;
+    margin-bottom:1rem
+   }
+ a {text-decoration:none; color:black}
+ h4 {font-size:2rem}
 
-.productCart{
-    align-items: center;
-    display: flex;
-/* pone los item uno al lado del otro */
-flex-wrap: wrap;
-/* acomoda los elemntos bien en cuadro */
-justify-content: space-around;
-    height: 850px;
-    padding: 30px;
-    border: 2px solid rgb(182, 134, 61);
+ .container{
+    margin-top: 10%;
+ }
+ .container-title{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
+ }
+  
+ .title{font-size:3rem;font-weight:200;line-height:1.1;display: flex; justify-content:center;}
 
-}
+ .form-client, .form-email{
+     display: flex;
+     justify-content:space-evenly;
+ }
+ .client-text, .email-text{
+     display: flex;
+     align-items: center;
+ }
+ .barra{
+     background-color:rgb(198, 223, 215);
+     color:black;
+     border-style:hidden;
+     height: 30%;
+     border-radius: 1rem;
+     text-align: center;
+ }
+/*  
+ .table{
+     display: flex;
+     flex-direction: column;
 
-.art{
-    align-items: stretch;
-    display: flex;
-    /* flex-direction: row-reverse;
-    para que los elementos se ordenen inversamente */
-    flex-direction: column;
-    justify-content: space-evenly;
+ }
 
-}
+ .table-detail{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .img-th{
+     width: 20%;
+ }
+ .img{
+     width:100%;
+     box-shadow: 5px 5px 0px 5px rgba(228, 177, 100, 0.5);
+   border-radius: 50%;
+ }
+.q{
+    max-width: 100%;
+} */
 
-.art:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    color: rgb(59, 48, 48);
-    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
-    transform: scale(1.1);
-    /* efecto de que al pasar la fecha sobre el item este mismo se agrande sin clickear */
-    transition: all 1.20s ease-in-out
-}
-.checktrash{
-align-items:flex-end
-}
-
-#img{
-    border-radius: 50px;
+.confirm-buy{
+    display:flex;
+    justify-content:space-evenly;
+    
 }
