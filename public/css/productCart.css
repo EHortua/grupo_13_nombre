@@ -76,5 +76,9 @@
 .confirm-buy{
     display:flex;
     justify-content:space-evenly;
-    
+}
+
+.go-product, .buy-buttom{
+    font-size:1.1rem;
+    border-radius: 2rem;
 }
