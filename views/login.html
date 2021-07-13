@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..//css/styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="desktop-header">
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="item"><a href="#">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">coffee</i>Café
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">grain</i>Café en grano
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">emoji_food_beverage</i>Té
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">coffee_maker</i>Cafeteras
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Cuenta</a>
+                        <ul class="dropdown">
+                            <li><a href="/registro">
+                                <i class="material-icons">face</i>Registrarse
+                                </a></li>
+                            <li><a href="/login">
+                                <i class="material-icons">insert_emoticon</i>Iniciar sesión
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="logo-head"><a href="http://localhost:1300/">
+                <h1>Three Coffee</h1>
+                <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+            </a>
+            </div>
+            <nav class="search-shop">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile search-btn" id="search">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearch()">
+                        <i class="material-icons">search</i>
+                    </div></li>
+                    <li><a class="cart">
+                        <i class="material-icons">shopping_cart</i>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="logo-head-mobile">
+                <a href="http://localhost:1300/">
+                    <h1>Three Coffee</h1>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+        </header>
+        <div class="sub-container">
+            <nav class="search-shop" id="mobile-search">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search-mobile">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearchMobile()">
+                        <i id="openSearch" class="material-icons">search</i>
+                    </div></li>
+                </ul>
+            </nav>
+            <nav class="sidebar">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i id="menu" class="material-icons">arrow_forward</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">grain</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">emoji_food_beverage</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee_maker</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="material-icons">shopping_cart</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">face</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!--SIDEBAR OPTIONS display-->
+            <nav class="sidebar-options">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            Café
+                            </a></li>
+                        <li><a href="#">
+                            Café en granos
+                            </a></li>
+                        <li><a href="#">
+                            Té en hebras
+                            </a></li>
+                        <li><a href="#">
+                            Cafeteras
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                Carrito de compras
+                                </a></li>
+                            <li>
+                                <a href="/login">Iniciar sesion</a>/<a href="/registro">Registrarse</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form action="" method="">
+                    <div class="form">
+                        <div class="input-container">
+                            <input class="input-style one" type="email" name="email" placeholder="Ingrese su email">
+                            <span class="error-message">Debe ingresar su email</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="input-style three" type="password" name="pass" placeholder="Ingrese su contraseña">
+                            <span class="error-message">Debe ingresar su contraseña</span>
+                        </div>
+                        <div class="check">
+                            <label for="recordar">  Recordarme </label>
+                            <input type="checkbox" name="recordar" id="recordar"> 
+                        </div>
+                        <div class="button-container">
+                            <span class="error-message">Credenciales inválidas</span>
+                            <button type="submit" class="btn btn-submit">Ingresar</button>
+                        </div>
+                        <span><a href="">¿Olvidaste tu contraseña?</a></span>
+                        <span><a href="/registro">Aún no tengo cuenta</a></span>
+                    </div>
+                </form>
+            </div>
+            <!--FOOTER-->
+            <footer>
+                <div class="logo-head-mobile foot">
+                    <a href="http://localhost:1300/">
+                        <h2>Three Coffee</h2>
+                        <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                    </a>
+                </div>
+                <article>
+                    <h3>Dudas</h3>
+                    <ul>
+                        <li><a>Medios de pago</a></li>
+                        <li><a>Envíos</a></li>
+                        <li><a>¿Cómo comprar?</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Nosotros</h3>
+                    <ul>
+                        <li><a>Nuestra historia</a></li>
+                        <li><a>Ubicación</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Contacto</h3>
+                    <ul class="contact">
+                        <li><a class="material-icons">phone_in_talk</a></li>
+                        <li><a href="#"><img src="..//images/instagram.svg"></a></li>
+                        <li><a class="material-icons">email</a></li>
+                        <li><a class="material-icons">facebook</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Newsletter</h3>
+                    <ul class="newss">
+                        <li>¡Enterate de nuestras ofertas antes que nadie!</li>
+                        <li>
+                            <div class="search-bar newsletter-bar">
+                                <input type="email" name="email" id="" placeholder="Tu email aquí">
+                                <button type="submit"><i class="material-icons">send</i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </footer>
+        </div>
+    </div>
+    <!--JS-->
+    <script src="..//Js/sidebar.js"></script> 
+</body>
+</html>

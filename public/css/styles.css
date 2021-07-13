@@ -78,7 +78,7 @@ header .logo-head-mobile a{
     background-color: var(--blue);
     border-radius: 50px;
     margin-left: 1%;
-    margin-top: 1%;
+    margin-top: 5rem;
     height: auto;
     width: auto;
     padding: 2px;
@@ -129,6 +129,7 @@ a #menu{
     padding: 2px;
     height: auto;
     padding-top: 35px;
+    margin-top: 5rem;
 }
 .sidebar-options li{
     margin: 13% 0;
@@ -516,7 +517,7 @@ footer .newsletter-bar button{
     .desktop-nav .item:hover .dropdown {
         display:block;
         min-width: 100px;
-       }
+    }
     header .logo-head{
         display: flex;
         flex-direction: row;
@@ -599,7 +600,6 @@ footer .newsletter-bar button{
         display: inline-block;
         padding: 0;
     }
-    }
     .we img{
         max-width: 90%;
         height: auto;
@@ -618,12 +618,15 @@ footer .newsletter-bar button{
     .lastest-container{
         margin: 0;
         width: 100%;
-    }.lastest-container .card{
+    }
+    .lastest-container .card{
         margin-right: 2.8rem;
+        width: 280px;
     }
     .flex{
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: flex-start;
         width: 100%;
     }
     .coffee3{

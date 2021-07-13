@@ -1,0 +1,134 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORM INPUT*/
+
+.form-container{
+    background: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    height: auto;
+    height: -moz-fit-content;
+    width: 100%;
+    padding: 1rem 0.5rem 1rem 2.5rem;
+}
+.form-container h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+}
+span.error-message{
+    color: red;
+    font-size: 00.8rem;
+    margin: 5px auto;
+}
+input.input-style{
+    border: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    
+}
+input.one{
+    background: rgba(39, 230, 255, 0.1);
+} 
+input.two{
+    background: rgba(39, 230, 255, 0.2);
+} 
+input.three{
+    background: rgba(39, 230, 255, 0.3);
+} 
+input.four{
+    background: rgba(39, 230, 255, 0.4);
+} 
+input.input-style::placeholder{
+    color: var(--capuchino);
+    font-weight: bold;
+}
+.input-file-container{
+    background-color: white;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+select.input-select{
+    border: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+input.input-style:focus, select.input-select:focus{
+    box-shadow: 0 0 6px white;
+    outline: none;
+}
+label{
+    font-size: 0.9rem;
+}
+/*BOTONES*/
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+}
+.btn-submit{
+    background: var(--honey);
+    color: var(--blue);
+    font-weight: bolder;
+    font-size: larger;
+    transition: 0.5s;
+}
+.btn-submit:hover{
+    border: 2px solid var(--blue);
+    background: white;
+    color: var(--honey);
+}
+.btn-reset {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(39, 151, 255, 0.5) 50%);
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+.btn-reset:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39, 151, 255, 0.5) 50%);
+}
+
+.btn-edit {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(43, 236, 124, 0.5) 50%);
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+.btn-edit:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -1px -1px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(43, 236, 124, 0.5) 50%);
+}
+@media (min-width: 1020px){
+    .form{
+        margin: 0 10rem;
+    }
+}

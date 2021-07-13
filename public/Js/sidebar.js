@@ -1,13 +1,17 @@
+//ARROW FOR OPEN SIDEBAR
+
 let menu = document.getElementById('menu');
-menu.addEventListener('click', function() {
-    if(menu.innerHTML == "arrow_forward"){
-        document.querySelector('.sidebar-options').style.display = 'flex';
-        menu.innerHTML = "arrow_back";
-    } else{
-        document.querySelector('.sidebar-options').style.display = 'none';
-        menu.innerHTML = "arrow_forward";
-    }
-});
+if(menu){
+    menu.addEventListener('click', function() {
+        if(menu.innerHTML == "arrow_forward"){
+            document.querySelector('.sidebar-options').style.display = 'flex';
+            menu.innerHTML = "arrow_back";
+        } else{
+            document.querySelector('.sidebar-options').style.display = 'none';
+            menu.innerHTML = "arrow_forward";
+        }
+    });
+}
 let searchBar = document.getElementById("search");
 function dropSearch(){
     if (searchBar.style.display === "block") {
@@ -27,13 +31,15 @@ function dropSearchMobile(){
     }
 }
 let openSearch = document.getElementById("openSearch");
-openSearch.addEventListener('click', function() {
-    if(openSearch.innerHTML == "search"){
-        openSearch.innerHTML = "close";
-    } else{
-        openSearch.innerHTML = "search";
-    }
-});
+if(openSearch){
+    openSearch.addEventListener('click', function() {
+        if(openSearch.innerHTML == "search"){
+            openSearch.innerHTML = "close";
+        } else{
+            openSearch.innerHTML = "search";
+        }
+    });
+}
 let item = document.getElementsByClassName('item');
 item.addEventListener("mouseover", function(){
     document.querySelector('.dropdown').style.display= 'block';
