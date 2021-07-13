@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       <!-- style -->
     <link rel="stylesheet" href="css/productCart.css">
+    <link rel="stylesheet" href='css/product.css'>
 
     <title>Carrito</title>
 
@@ -25,21 +26,23 @@
         <div class="container">
            
                 <div class="container-title">
-                    <h1 class="title">Realizar Compra</h1>
+                    <h1 class="title">Tu Carrito<i class="fas fa-cart-plus"></i></h1>
+                       <div class='form-client-email'>
                         <div class="form-client">
                             <h4 class="client">Cliente :</h4>
                             <div class="client-text">
                                 <input class='barra' type="text" size="30%"
-                                    placeholder="Ingresa nombre completo">
+                                    placeholder="Ingresá nombre completo">
                             </div>
                         </div>
                         <div class="form-email">
                             <h4  class="email">Correo :</h4>
                             <div class="email-text">
-                                <input class='barra' type="text" size="30%" placeholder="Ingresa tu correo"  >
+                                <input class='barra' type="text" size="30%" placeholder="Ingresá tu correo electrónico"  >
                             </div>
                         </div>
 
+                       </div>
                         <!-- <div  class="table" >
                             <table class="table-menu" >
                             
@@ -62,44 +65,43 @@
                                     <th>Total</th>
                              </table>
                           </div> -->
-
+                        <section class='card-cart'>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Café Santander Grano</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                                    <h1 class="card-precio">$500</h1>
+            
+                                    <ul class="card-list">
+                                        <li class='card-detail'>454g</li>
+                                        <li class='card-detail'>Juan Valdez</li>
+                                        <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                                    </ul>
+                                    <div class="card-buttom">
+                                        <a href="" class='buttom'><i class="fas fa-cart-plus"></i></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
 
                         <div class="confirm-buy">
                             <div class="no-buy-go-product">
-                            
-                                <a href="product.html"class="go-product">Seguir comprando </a>
+                            <button class="go-product">
+                                <a href="product.html" >Seguir comprando </a>
+                            </button>
                             </div>
                             <div class="buy">
                                 <button href="#" class="buy-buttom" >Comprar</button>
                             </div>
                         </div>
-                    
-
 
                 </div>
 
-
-           
-
         </div>
     </main>
-
-
-
-
-
-    </div>
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/sweetalert2.min.js"></script>
-
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-
-    <script src="js/carrito.js"></script>
-    <script src="js/compra.js"></script>
-
 
 </body>
 
