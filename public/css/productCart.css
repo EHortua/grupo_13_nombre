@@ -1,58 +1,73 @@
-/* fuente */
-
-
-
+:root{
+    --blue: #00353F;
+    --cyan: #08C5D1;
+    --honey: #FFBF66;
+    --capuchino:#D46F4D;
+    --coffee: #430C05;
+ }
+ 
+.container{
+    background-color: white;
+}
  .form-client-email{
-
-     background-color: #08c4d10e;
+     margin: 0 50px 20px 50px;
+     height: 50px;
+     background-color:#08c4d12c;
      box-shadow: 8px 5px 5px 1px var(--capuchino);
-border-radius: 1rem;
-margin-bottom: 2rem;
+border-radius: 2rem;
+text-align: center;
+color: var(--coffee);
+
  }
  .form-client, .form-email{
-     display: flex;
-     justify-content:space-evenly;
-     line-height: 0.5;
-     
+     line-height: 1.3;   
  }
- .client-text, .email-text{
-     display: flex;
-     align-items: center;
-text-decoration:underline;
 
- }
  .barra{
 background-color: inherit;
-     color: var(--blue);
      border-style:hidden;
-     height: 50%;
      text-align: center;
-     font-size: 0.8rem;
  }
 
-/*  
- .table{
-     display: flex;
-     flex-direction: column;
+ .product-cart{
+    width: 90%;
+    margin: 0 auto;
+
+ }
+ .checktrash{
+     height: 13px;
+    margin-left: 53px;
+    margin-right: 53px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .trash {
+     color: var(--cyan);
+     height: 15px;
+     border-radius: 10px;
+border-color: white; 
+}
+.trash i{
+    display: flex;
+    font-size: 12px;
+margin-bottom: 15px;
+
+}
+
+
+ .card-list, .card-precio{
+     display: none;
+ }
+
+ .cantidad, #cantidad, #Total{
+     height: 30px;
+ }
+ .cantidad{
+    margin: 2px 0 5px 0;
 
  }
 
- .table-detail{
-     display: flex;
-     justify-content: space-evenly;
-     
- }
- .img-th{
-     width: 20%;
- }
- .img{
-     width:100%;
-     box-shadow: 5px 5px 0px 5px rgba(228, 177, 100, 0.5);
-   border-radius: 50%;
- }
-.q{
-    max-width: 100%;
-} */
 
 .confirm-buy{
     height: 3rem;
@@ -71,10 +86,9 @@ display: flex;
 
 
 @media (min-width: 400px){
-   .title{
-      margin: auto;}
+    .product-cart{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
 
-      .form-client, .form-email{
-          font-size: 1rem;
-      }
 }

@@ -5,20 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- fuente -->
-      <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway?subset=latinhttps://fonts.google.com/specimen/Raleway?subset=latin">
+      <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300&display=swap" rel="stylesheet">
       <!-- icon -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
       <!-- style -->
     <link rel="stylesheet" href="css/product.css">
-
+    <link rel="stylesheet" href="css/styles.css">
     <title>Cafe en granos</title>
 </head>
 
 <body>
 
     <header>
-
+        <header class="desktop-header">
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="item"><a href="#">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">coffee</i>Café
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">grain</i>Café en grano
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">emoji_food_beverage</i>Té
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">coffee_maker</i>Cafeteras
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Cuenta</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">face</i>Registrarse
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">insert_emoticon</i>Iniciar sesión
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="logo-head"><a href="http://localhost:1300/">
+                <h1>Three Coffee</h1>
+                <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+            </a>
+            </div>
+            <nav class="search-shop">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearch()">
+                        <i class="material-icons">search</i>
+                    </div></li>
+                    <li><a class="cart">
+                        <i class="material-icons">shopping_cart</i>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="logo-head-mobile">
+                <a href="http://localhost:1300/">
+                    <h1>Three Coffee</h1>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+        </header>
+        <div class="sub-container">
+            <nav class="search-shop" id="mobile-search">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search-mobile">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearchMobile()">
+                        <i id="openSearch" class="material-icons">search</i>
+                    </div></li>
+                </ul>
+            </nav>
+            <nav class="sidebar">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i id="menu" class="material-icons">arrow_forward</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">grain</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">emoji_food_beverage</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee_maker</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="material-icons">shopping_cart</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">face</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!--SIDEBAR OPTIONS display-->
+            <nav class="sidebar-options">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i class="">Café</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Café en granos</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Té en hebras</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Cafeteras</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="">Carrito de compras</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="">Iniciar sesion/Registrarse</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -27,7 +164,7 @@
                 <h1>Lista de Productos</h1>
             </div>
            <div class="subtitle">
-            <p >Selecciona uno de nuestros productos de cafe en grano y disfruta de la vida!!!</p>
+            <h3>Selecciona uno de nuestros productos de cafe en grano y disfruta de la vida!!!</h3>
            </div>
         </section>
 
@@ -47,7 +184,7 @@
                             <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href="" class='buttom'><i class="fas fa-cart-plus"></i></a>
+                            <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
                         </div>
                         
                     </div>
@@ -67,7 +204,7 @@
                             <li class='card-detail'>Café de origen fuerte con notas de sabor a malta tostada y miel de caña.</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href="" class='buttom' ><i class="fas fa-cart-plus"></i></a>
+                            <a href="" class='buttom' ><i class="material-icons">shopping_cart</i></a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +223,7 @@
                             <li>Café fuerte con notas de sabor a uva semiseca, cocoa y té</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href=""  class='buttom'><i class="fas fa-cart-plus"></i></a>
+                            <a href=""  class='buttom'><i class="material-icons">shopping_cart</i></a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +242,7 @@
                             <li>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href="" class='buttom' ><i class="fas fa-cart-plus"></i></a>
+                            <a href="" class='buttom' ><i class="material-icons">shopping_cart</i></a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +261,7 @@
                             <li>Café de origen fuerte con notas de sabor a malta tostada y miel de caña.</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href=""  class='buttom'><i class="fas fa-cart-plus"></i></a>
+                            <a href=""  class='buttom'><i class="material-icons">shopping_cart</i></a>
                         </div>
                     </div>
                 </div>
@@ -143,16 +280,58 @@
                             <li>Café fuerte con notas de sabor a uva semiseca, cocoa y té</li>
                         </ul>
                         <div class="card-buttom">
-                            <a href="" class='buttom' ><i class="fas fa-cart-plus"></i></a>
+                            <a href="" class='buttom' ><i class="material-icons">shopping_cart</i></a>
                         </div>
                     </div>
                 </div>
         </section>
     </main>
     <footer>
-        FOOTER
+        <footer>
+            <div class="logo-head-mobile foot">
+                <a href="http://localhost:1300/">
+                    <h2>Three Coffee</h2>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+            <article>
+                <h3>Dudas</h3>
+                <ul>
+                    <li><a>Medios de pago</a></li>
+                    <li><a>Envíos</a></li>
+                    <li><a>¿Cómo comprar?</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a>Nuestra historia</a></li>
+                    <li><a>Ubicación</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Contacto</h3>
+                <ul class="contact">
+                    <li><a class="material-icons">phone_in_talk</a></li>
+                    <li><a href="#"><img src="..//images/instagram.svg"></a></li>
+                    <li><a class="material-icons">email</a></li>
+                    <li><a class="material-icons">facebook</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Newsletter</h3>
+                <ul class="newss">
+                    <li>¡Enterate de nuestras ofertas antes que nadie!</li>
+                    <li>
+                        <div class="search-bar newsletter-bar">
+                            <input type="email" name="email" id="" placeholder="Tu email aquí">
+                            <button type="submit"><i class="material-icons">send</i></button>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </footer>
     </footer>
-
+<script src="Js/sidebar.js"></script>
 </body>
-
 </html>

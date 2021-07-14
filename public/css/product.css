@@ -1,6 +1,3 @@
-/* fuente */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 :root{
    --blue: #00353F;
    --cyan: #08C5D1;
@@ -9,156 +6,146 @@
    --coffee: #430C05;
 }
 
- *{
-    font-family: 'Raleway';
-    box-sizing:border-box;
-    
- }
- 
- body{
-    margin:0;
-    padding: 0;
-    font-size:1rem;
-    font-weight:400;
-    line-height:1.5;
-    color:var(--blue);
-    text-align:left;
-background-color: white;   }
- h1,h4,p{
-    margin-top:0;
-    margin-bottom:.5rem
-   }
- a {text-decoration:none}
- h4 {font-size:2.5rem}
-
- .container-title{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
-}
- 
-.title{font-size:3.5rem;font-weight:200;line-height:1.1;display: flex; justify-content:center;}
-
-.subtitle{font-size:1.80rem;font-weight:300;
-   display: flex;
-   justify-content: center;
-}
-
-
-.container-product{
-   padding: 2%;
-}
-
-   
-.card{
-   box-shadow: 5px 5px 0px 5px rgba(228, 177, 100, 0.5);
-   border-radius: 3%;
-   margin: 2%;
+.title{
+   margin: 5%;
    text-align: center;
-   background-color:rgb(245, 237, 226)
+   font-size: 20px;
+   color: var(--coffee);
+}
+
+.subtitle{
+   margin: 5px 30px 20px 30px; 
+   text-align: right; 
+   font-size: 15px
+}
+
+.card{
+   box-shadow: 5px 5px 10px 0px var(--cyan);
+   border-radius: 30px;
+   margin: 0 auto;
+   text-align: center;
+   background-color:rgb(245, 237, 226);
+   margin-bottom: 10%;
+   width: 70%;
+   color: var(--coffee);
+
 
 }
-.card-header{
-   background-color: rgba(228, 177, 100, 0.2);
+.card-header{  
+   background-color: var(--cyan);
+   font-size: 20px;
+   height: 50px;
 }
- 
+ .card-title{
+   padding-top: 5px;
+ }
 .card-img{
-max-width: 100%;
-border-radius: 50%;
+   max-width: 100%;
+   border-radius: 50%;
 }
 
  .card-list{
-    height: 50%;
-    padding-left:0;
-    list-style:none;
+   height: 50%;
+   padding-left:0;
+   list-style:none;
    background-color: rgba(228, 177, 100, 0.2);
    }
    
-/* .card-buttom{
-   background-color: rgba(228, 177, 100, 0.2);
-border-radius: 50%;
-width: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
-}  */
-
-.buttom{
-   font-size: 250%;
-   color:var(--cyan);
-display: flex;
-justify-content:space-evenly;
-margin: 1%;
+   
+ .buttom{
+   color:var(--honey);
+   display: flex;
+   justify-content:center;
+   align-content: center;
+   margin: 0 auto;
+   height: 50px;
+   width: 50px;
+   background-color:
+   var(--cyan) ;
+   border-radius: 100%;
 }
 .buttom:hover{
-   transform:scale(1.4);
-   transition:all 1.1s ease-in-out;
+   transform:scale(1.3);
+   transition:all 2s ease-in-out;
 }
-
-/* .card:hover{
-   transform:scale(0.9);
-   transition:all 1.5s ease-in-out;
+/* PARA CUANDO HAGA LA COMPRA DEBERIA CAMBIAR POR UNA TILDE
+.buttom:hover{
+   transform:scale(0.8);
+   transition:all 2s ease-in-out;
 } */
 
 
- @media (min-width: 400px){
+.buttom i{
+   margin: auto;
+   font-size: 35px;
+}
+
+
+                      /* MEDIA  QUEARIES */
+
+/* CEL */
+@media (min-width: 400px){
    .container-product{
       display: flex;
       flex-direction: column;
    }
-
-.container-title{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
-}
-.title{font-size:1rem;font-weight:200;line-height:2.1;display: flex; justify-content:center;}
-
-.subtitle{font-size:1.4rem;font-weight:300;text-align: center;
-}
-h1{font-size:2.6rem}
-h4{font-size:2rem}
-.card{
-   margin: 5%;
-}
-.card-list{
-   font-size: 1.5rem;
 }
 
-
- }
-
-/* .card-precio, .card-detail{
-   font-size: 10%;
-} */
-
-  @media (min-width: 769px){
+@media (min-width: 650px){
    .container-product{
       display: flex;
       flex-wrap: wrap;
       flex-direction:row;
       justify-content: space-evenly;
+      margin: 2.2%;
    }
-   h1{ font-size: 4.5rem}
-   p{font-size: 2.5rem}
+   .subtitle{
+      margin: 0 50px 30px 10rem
+   }
+   .card{
+      width: 40%;
+      margin: 2%;
+   }
+   .card-list{
+      height: 100px;
+   }
  
-
-   .card{ width: 40%;}
-
 }
 
+/* TABLET */
+@media (min-width: 768px){
+   .container-product{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      justify-content: space-evenly;
+      margin:0 5% 1% 5% ;
+   }
+   .subtitle{
+      margin: 0 50px 30px 20rem
+   }
+   .card{ 
+      width: 30%;
+      margin: 1.2%;
+   }
+   .card-list{
+      height: 115px;
+   }
+ 
+}
 
-
-  @media (min-width: 1200px){
+/* DESKTOP */
+@media (min-width: 1200px){
    .container-product{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-evenly;
-      padding: 1%;
-      width: fit-content;
-      height: fit-content;
+      margin-bottom: 2%;
    }
-
    .card{
-      width: 30%;
+      width: 20%;
       margin: 1%;
-
-   }
- 
+   } 
 }
  

@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- fuente -->
-      <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway?subset=latinhttps://fonts.google.com/specimen/Raleway?subset=latin">
+     <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300&display=swap" rel="stylesheet">
       <!-- icon -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
       <!-- style -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/productCart.css">
-    <link rel="stylesheet" href='css/product.css'>
 
     <title>Carrito</title>
 
@@ -19,75 +24,400 @@
 
 <body>
     <header>
-
+        <header class="desktop-header">
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="item"><a href="#">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">coffee</i>Café
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">grain</i>Café en grano
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">emoji_food_beverage</i>Té
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">coffee_maker</i>Cafeteras
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Cuenta</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">face</i>Registrarse
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">insert_emoticon</i>Iniciar sesión
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="logo-head"><a href="http://localhost:1300/">
+                <h1>Three Coffee</h1>
+                <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+            </a>
+            </div>
+            <nav class="search-shop">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearch()">
+                        <i class="material-icons">search</i>
+                    </div></li>
+                    <li><a class="cart">
+                        <i class="material-icons">shopping_cart</i>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="logo-head-mobile">
+                <a href="http://localhost:1300/">
+                    <h1>Three Coffee</h1>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+        </header>
+        <div class="sub-container">
+            <nav class="search-shop" id="mobile-search">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search-mobile">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearchMobile()">
+                        <i id="openSearch" class="material-icons">search</i>
+                    </div></li>
+                </ul>
+            </nav>
+            <nav class="sidebar">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i id="menu" class="material-icons">arrow_forward</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">grain</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">emoji_food_beverage</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee_maker</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="material-icons">shopping_cart</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">face</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!--SIDEBAR OPTIONS display-->
+            <nav class="sidebar-options">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i class="">Café</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Café en granos</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Té en hebras</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Cafeteras</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="">Carrito de compras</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="">Iniciar sesion/Registrarse</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
     </header>
 
     <main>
         <div class="container">
            
                 <div class="container-title">
-                    <h1 class="title">Tu Carrito<i class="fas fa-cart-plus"></i></h1>
-                       <div class='form-client-email'>
-                        <div class="form-client">
-                            <h4 class="client">Cliente :</h4>
-                            <div class="client-text">
-                                <input class='barra' type="text" size="30%"
+                    <h1 class="title">Tu Carrito<i class="material-icons">shopping_cart</i></h1>
+                <form action="" class='form-client-email'>
+                            <div class="form-client">
+                                <div class="client-text">
+                                   <label for="" class="client">Cliente :
+                                    <input class='barra' type="text" size="30%"
                                     placeholder="Ingresá nombre completo">
+                                   </label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-email">
-                            <h4  class="email">Correo :</h4>
-                            <div class="email-text">
-                                <input class='barra' type="text" size="30%" placeholder="Ingresá tu correo electrónico"  >
+                            <div class="form-email">
+                                <div class="email-text">
+                                    <label for="" class="email">Correo :
+                                        <input class='barra' type="text" size="30%" placeholder="Ingresá tu correo electrónico"  >
+                                    </label>
+                                </div>
                             </div>
+                </form>
+                <section class='product-cart'>
+                   <article class='card-cart'>
+                    <div class='checktrash' >
+                        <input type="checkbox" name="" id="select-prod">
+                        <button class='trash'><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                             <h4 class="card-title">Café Santander Grano</h4>
                         </div>
+                        <div class="card-body">
+                             <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                             <h1 class="card-precio">$500</h1>
+                             <ul class="card-list">
+                                <li class='card-detail'>454g</li>
+                                <li class='card-detail'>Juan Valdez</li>
+                                <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                             </ul>
+                    <button><i class="fa fa-heart"></i></button>
 
-                       </div>
-                        <!-- <div  class="table" >
-                            <table class="table-menu" >
-                            
-                                        <th >Producto</th>
-                                        <th >Precio</th>
-                                        <th >Cantidad</th>
-                                        <th>Sub Total</th>
-                                        <th>Eliminar</th>
-                                        <th>Total</th>
-                
-                            </table>
+                            <div class='cantidad'>
+                                <select name="cantidad" class='barra' id="cantidad">
+                                    <option value="">cantidad</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <label class='barra' for="">
+                                    <input type="number" name="" class='barra' id="Total" placeholder="Total">
+                                </label> 
+                                
+                            </div>
+                            <div class="card-buttom">
+                                 <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                                        
+                        </div>
+                    </div>
+                   </article>
+                   <article class='card-cart'>
+                    <div class='checktrash' >
+                        <input type="checkbox" name="" id="select-prod">
+                        <button class='trash'><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                             <h4 class="card-title">Café Santander Grano</h4>
+                        </div>
+                        <div class="card-body">
+                             <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                             <h1 class="card-precio">$500</h1>
+                             <ul class="card-list">
+                                <li class='card-detail'>454g</li>
+                                <li class='card-detail'>Juan Valdez</li>
+                                <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                             </ul>
+                    <button><i class="fa fa-heart"></i></button>
+
+                            <div class='cantidad'>
+                                <select name="cantidad" class='barra' id="cantidad">
+                                    <option value="">cantidad</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <label class='barra' for="">
+                                    <input type="number" name="" class='barra' id="Total" placeholder="Total">
+                                </label> 
+                                
+                            </div>
+                            <div class="card-buttom">
+                                 <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                                        
+                        </div>
+                    </div>
+                   </article>
+                   <article class='card-cart'>
+                    <div class='checktrash' >
+                        <input type="checkbox" name="" id="select-prod">
+                        <button class='trash'><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                             <h4 class="card-title">Café Santander Grano</h4>
+                        </div>
+                        <div class="card-body">
+                             <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                             <h1 class="card-precio">$500</h1>
+                             <ul class="card-list">
+                                <li class='card-detail'>454g</li>
+                                <li class='card-detail'>Juan Valdez</li>
+                                <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                             </ul>
+                    <button><i class="fa fa-heart"></i></button>
+
+                            <div class='cantidad'>
+                                <select name="cantidad" class='barra' id="cantidad">
+                                    <option value="">cantidad</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <label class='barra' for="">
+                                    <input type="number" name="" class='barra' id="Total" placeholder="Total">
+                                </label> 
+                                
+                            </div>
+                            <div class="card-buttom">
+                                 <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                                        
+                        </div>
+                    </div>
+                   </article>
+                   <article class='card-cart'>
+                    <div class='checktrash' >
+                        <input type="checkbox" name="" id="select-prod">
+                        <button class='trash'><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                             <h4 class="card-title">Café Santander Grano</h4>
+                        </div>
+                        <div class="card-body">
+                             <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                             <h1 class="card-precio">$500</h1>
+                             <ul class="card-list">
+                                <li class='card-detail'>454g</li>
+                                <li class='card-detail'>Juan Valdez</li>
+                                <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                             </ul>
+                    <button><i class="fa fa-heart"></i></button>
+
+                            <div class='cantidad'>
+                                <select name="cantidad" class='barra' id="cantidad">
+                                    <option value="">cantidad</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <label class='barra' for="">
+                                    <input type="number" name="" class='barra' id="Total" placeholder="Total">
+                                </label> 
+                                
+                            </div>
+                            <div class="card-buttom">
+                                 <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                                        
+                        </div>
+                    </div>
+                   </article>
+                </section>
+
+
+               
+                <section id='detailCart'>    
+                <!--Datos personales--> 
+                    <h2>Datos de compra</h2>  
+                    <br>
+                    <div class='datos personales'>
+                        <h4>Nombre completo :
+                            <input type="text" id="nombre" value="" size="30%" />
+                        </h4>
+                        <br>
+                        <h4>DNI :
+                            <input type="text" id="dni" value="" size="15%" maxlength="9" />
+                            Tel :
+                            <input type="text" id="movil" value="" size="20%" maxlength="10"/>
+                        </h4>
+                        <br>
+                        <h4>Email : 
+                            <input type="text" id="email1" value="" size="35%" />
+                        </h4>
+                        <br>
+                        <h4>Repetir email :
+                            <input type="text" id="email2" value="" size="35%" />
+                        </h4>
+                    </div>
+                    <br>
+                    <br>
+                    <div class='envio'>
+                        <h4><input type="radio">Envio</h4>
+        
+                        <br>
                         
-                             <table class="table-detail">
+                        <h4>Domicilio : 
+                            <input type="text" id="Dom" value="" size="40%"/>
+                        </h4>
+                        <br>
+                        <h4>Localidad : 
+                            <select name="" id="hs">
+                                <option value="">Elegir</option>
+                                <option value="">Lanus</option>
+                                <option value="">Avellaneda</option>
+                                <option value="">Gerli</option>
+                            </select>
+                            Codigo Postal : 
+                            <input type="text" id="codigoPostal" value="" size="5%" maxlength="5"/>
+                        </h4>                
+                    </div> 
+                    
+                    <br>
+                    <br>
+        
+                    <div class='retiro'>
+                        <h4><input type="radio">Retiro :
+                            <input type="datetime-local" name="" id="">
                             
-                                    <th class='img-th'><img  class='img' src="images/VALLE-DEL-CAUCA-GRANO-454G-FRONT.webp"></th>
-                                     <th>$300</th>
-                                    <th> <input class='q'  type="number" placeholder="cantidad" </th>
-                                    <th>Sub Total</th>
-                                    <th><input type="checkbox" name="" id=""></th>
-                                    <th>Total</th>
-                             </table>
-                          </div> -->
-                        <section class='card-cart'>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Café Santander Grano</h4>
-                                </div>
-                                <div class="card-body">
-                                    <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
-                                    <h1 class="card-precio">$500</h1>
-            
-                                    <ul class="card-list">
-                                        <li class='card-detail'>454g</li>
-                                        <li class='card-detail'>Juan Valdez</li>
-                                        <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
-                                    </ul>
-                                    <div class="card-buttom">
-                                        <a href="" class='buttom'><i class="fas fa-cart-plus"></i></a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </section>
+                           <!-- <select name="" id="Dia">
+                                <option value="">Dia</option>
+                                <option value="">Lunes</option>
+                                <option value="">Martes</option>
+                                <option value="">Miercoles</option>
+                            </select> -->
+                            <!-- <select name="" id="Turno">
+                                <option value="">Turno</option>
+                                <option value="">Mañana</option>
+                                <option value="">Tarde</option>
+                                <option value="">Noche</option>
+                            </select>  -->
+                            <select name="" id="Sucursal">
+                                <option value="">Sucursal</option>
+                                <option value="">Lanus</option>
+                                <option value="">Avellaneda</option>
+                                <option value="">Gerli</option>
+                            </select> 
+                        </h4> 
+                    </div>
+                </section> 
+                <br>
+                <br>
+                <center><button>PAGAR</button></center>
 
-                        <div class="confirm-buy">
+                <div class="confirm-buy">
                             <div class="no-buy-go-product">
                             <button class="go-product">
                                 <a href="product.html" >Seguir comprando </a>
@@ -96,13 +426,59 @@
                             <div class="buy">
                                 <button href="#" class="buy-buttom" >Comprar</button>
                             </div>
-                        </div>
+                </div>
 
                 </div>
 
         </div>
     </main>
 
+    <footer>
+        <footer>
+            <div class="logo-head-mobile foot">
+                <a href="http://localhost:1300/">
+                    <h2>Three Coffee</h2>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+            <article>
+                <h3>Dudas</h3>
+                <ul>
+                    <li><a>Medios de pago</a></li>
+                    <li><a>Envíos</a></li>
+                    <li><a>¿Cómo comprar?</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a>Nuestra historia</a></li>
+                    <li><a>Ubicación</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Contacto</h3>
+                <ul class="contact">
+                    <li><a class="material-icons">phone_in_talk</a></li>
+                    <li><a href="#"><img src="..//images/instagram.svg"></a></li>
+                    <li><a class="material-icons">email</a></li>
+                    <li><a class="material-icons">facebook</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Newsletter</h3>
+                <ul class="newss">
+                    <li>¡Enterate de nuestras ofertas antes que nadie!</li>
+                    <li>
+                        <div class="search-bar newsletter-bar">
+                            <input type="email" name="email" id="" placeholder="Tu email aquí">
+                            <button type="submit"><i class="material-icons">send</i></button>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </footer>
+    </footer>
+<script src="Js/sidebar.js"></script>
 </body>
-
 </html>
