@@ -346,6 +346,11 @@ ul li {
     transform: translateY(50px);
     transition: 0.5s;  
 }
+.lastest-container .card .description-product a:hover{
+    border: 2px solid var(--blue);
+    background: white;
+    color: var(--honey);
+}
 .card .description-product a i{
     color: var(--blue);
 }
