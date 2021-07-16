@@ -2,7 +2,7 @@ let express = require('express');
 let app = express();
 let path = require('path');
 
-let port = 1300;
+let port = 1313;
 
 app.use(express.static('public'));
 app.set("views", path.join(__dirname, "views"));
@@ -18,3 +18,14 @@ app.get('/login', (req, res)=>{
     res.sendFile(path.join(__dirname, 'views/login.html'));
 })
 
+app.get('/product',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views/product.html'))
+})
+
+app.get('/productCart',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views/productCart.html'))
+})
+
+app.get('/productDetail',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views/productDetail.html'))
+})

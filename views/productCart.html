@@ -1,12 +1,484 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,200;1,300&display=swap" rel="stylesheet">
+      <!-- icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+      <!-- style -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productCart.css">
+
+    <title>Carrito</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <header class="desktop-header">
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="item"><a href="#">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">coffee</i>Café
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">grain</i>Café en grano
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">emoji_food_beverage</i>Té
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">coffee_maker</i>Cafeteras
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Cuenta</a>
+                        <ul class="dropdown">
+                            <li><a href="#">
+                                <i class="material-icons">face</i>Registrarse
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">insert_emoticon</i>Iniciar sesión
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="logo-head"><a href="http://localhost:1300/">
+                <h1>Three Coffee</h1>
+                <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+            </a>
+            </div>
+            <nav class="search-shop">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearch()">
+                        <i class="material-icons">search</i>
+                    </div></li>
+                    <li><a class="cart">
+                        <i class="material-icons">shopping_cart</i>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="logo-head-mobile">
+                <a href="http://localhost:1300/">
+                    <h1>Three Coffee</h1>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+        </header>
+        <div class="sub-container">
+            <nav class="search-shop" id="mobile-search">
+                <ul>
+                    <li>
+                        <form action="#" class="search-form-mobile" id="search-mobile">
+                            <div class="search-bar">
+                                <input type="search" name="busqueda" id="" placeholder="Buscar">
+                                <button type="submit"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><div class="search" onclick="dropSearchMobile()">
+                        <i id="openSearch" class="material-icons">search</i>
+                    </div></li>
+                </ul>
+            </nav>
+            <nav class="sidebar">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i id="menu" class="material-icons">arrow_forward</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">grain</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">emoji_food_beverage</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="material-icons">coffee_maker</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="material-icons">shopping_cart</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="material-icons">face</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!--SIDEBAR OPTIONS display-->
+            <nav class="sidebar-options">
+                <div id="sidebar-container">
+                    <ul>
+                        <li><a href="#">
+                            <i class="">Café</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Café en granos</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Té en hebras</i>
+                            </a></li>
+                        <li><a href="#">
+                            <i class="">Cafeteras</i>
+                            </a></li>
+                        <div>
+                            <li><a href="#">
+                                <i class="">Carrito de compras</i>
+                                </a></li>
+                            <li><a href="#">
+                                <i class="">Iniciar sesion/Registrarse</i>
+                                </a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+           
+                <div class="container-title">
+                    <h1 class="title">Tu Carrito<i class="material-icons">shopping_cart</i></h1>
+                
+                <div class='subcontainer'>
+                    <section class='product-cart'>
+                    <article class='card-cart'>
+                        <input type="checkbox" name="" id="select-prod">
+                        <button class='trash'><i class="fa fa-trash"></i></button>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Café Santander Grano</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                                <h1 class="card-precio">$500</h1>
+                                <ul class="card-list">
+                                    <li class='card-detail'>454g</li>
+                                    <li class='card-detail'>Juan Valdez</li>
+                                    <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                                </ul>
+            
+                                <div class='cantidad'>
+                                    <select name="cantidad" class='barra' id="cantidad">
+                                        <option value="">cantidad</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                
+                                </div>
+                                <div class="card-buttom">
+                                    <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </article>
+                    <article class='card-cart'>
+                        <input type="checkbox" name="" id="select-prod">
+                            <button class='trash'><i class="fa fa-trash"></i></button>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Café Santander Grano</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                                <h1 class="card-precio">$500</h1>
+                                <ul class="card-list">
+                                    <li class='card-detail'>454g</li>
+                                    <li class='card-detail'>Juan Valdez</li>
+                                    <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                                </ul>
+
+                                <div class='cantidad'>
+                                    <select name="cantidad" class='barra' id="cantidad">
+                                        <option value="">cantidad</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+                                <div class="card-buttom">
+                                    <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </article>
+                    <article class='card-cart'>
+                        <div class='checktrash' >
+                            <input type="checkbox" name="" id="select-prod">
+                            <button class='trash'><i class="fa fa-trash"></i></button>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Café Santander Grano</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                                <h1 class="card-precio">$500</h1>
+                                <ul class="card-list">
+                                    <li class='card-detail'>454g</li>
+                                    <li class='card-detail'>Juan Valdez</li>
+                                    <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                                </ul>
+
+                                <div class='cantidad'>
+                                    <select name="cantidad" class='barra' id="cantidad">
+                                        <option value="">cantidad</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+                                <div class="card-buttom">
+                                    <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </article>
+                    <article class='card-cart'>
+                        <div class='checktrash' >
+                            <input type="checkbox" name="" id="select-prod">
+                            <button class='trash'><i class="fa fa-trash"></i></button>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Café Santander Grano</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/cafe vladez SANTANDER-GRANO.jpg" class="card-img">
+                                <h1 class="card-precio">$500</h1>
+                                <ul class="card-list">
+                                    <li class='card-detail'>454g</li>
+                                    <li class='card-detail'>Juan Valdez</li>
+                                    <li class='card-detail'>Café de origen balanceado con notas de sabor a té de manzanilla, azúcar morena y chocolate</li>
+                                </ul>
+
+                                <div class='cantidad'>
+                                    <select name="cantidad" class='barra' id="cantidad">
+                                        <option value="">cantidad</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+                                <div class="card-buttom">
+                                    <a href="" class='buttom'><i class="material-icons">shopping_cart</i></a>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </article>
+                    </section>
+                    
+                    <section id='detailCart '> 
+
+                    <!--Datos personales--> 
+                        <h2 class="title">Datos de compra :</h2>  
+
+                        <div class='datos-personales barra-container '>
+                            <label for="nombre">
+                                    <input type="text" id="nombre" placeholder="Nombre Completo" value="" size="20%" class='barra'/>
+                            </label>
+                        <label for="dni">
+                                <input type="number" id="dni" placeholder="DNI" value="" size="15%" maxlength="9" class='barra' />
+                        </label>
+                            <label for="tel">
+                                <input type="text" id="tel" value="" placeholder="Telefono" size="20%" maxlength="10" class='barra'/>
+                            </label>
+                        </div>   
+                        
+                        
+                        
+                        
+                    <div class='datos-personales barra-container' id='envio-retiro'>
+                        <label for="subtotal"  >
+                            <input type="number" class='barra' id="subtotal" placeholder='SubTotal'  />   
+                    </label><hr>
+                        <div class='envio'>
+                            <label for="envio"><input  id='envio' type="radio">Envio</label>
+                            <br>
+                            <label for="Dom"><input class='barra' placeholder="Domicilio" type="text" id="Dom" value="" size="30%"/>
+                            </label>
+                        <label  for="hs"> 
+                                <select class='barra hs' name=""  id="hs">
+                                    <option value="">Localidad</option>
+                                    <option value="">Lanus</option>
+                                    <option value="">Avellaneda</option>
+                                    <option value="">Gerli</option>
+                                </select> 
+                        </label>            
+                        </div> 
+                        
+                        <hr>
+                        
+                        <div class='retiro'>
+                        <label for="retiro"><input  id='retiro' type="radio">Retiro : </label><br>
+                        <label for="nombre">
+                            <input type="text" id="nombre" placeholder="Nombre de quien retira" value="" size="20%" class='barra'/>
+                            </label>
+                                                    
+                
+                            <label for="suc-retiro">
+                                <select name="suc-retiro" class='hs barra ' id="Suc-retiro ">
+                                    <option value="">Sucursal</option>
+                                    <option value="">Lanus</option>
+                                    <option value="">Avellaneda</option>
+                                    <option value="">Gerli</option>
+                                </select> 
+                            </label>
+                        </div>
+                        <hr>
+                        <label for="fecha-retiro">
+                            <input type="datetime-local" class='barra' name="fecha-retiro" id="fecha-retiro">
+                        </label><hr>
+                        <label for="total"  >
+                            <input type="number" class='barra' id="total" placeholder='Total'  />   
+                    </label> 
+
+                    </div>
+
+                    <div class='datos-pago datos-personales barra-container'>
+                        <label for="efect" >
+                            <input type="radio"  id="efect"/> Efectivo
+                    </label> <hr>
+                    
+                    <label for="tarjeta"  >
+                        <input type="radio"  id="tarjeta"/> Tarjeta
+                    </label>
+                    <div class='datos-tarjeta'>
+                        <label for="nombretarj">
+                            <input type="text" id="nombretarj" placeholder="Nombre del Titular" value="" size="20%" class='barra'/>
+                        </label>
+                            <label for="dnitarj">
+                                    <input type="number" id="dnitarj" placeholder="DNI" value="" size="15%" maxlength="9" class='barra' />
+                            </label>
+                            <label for="numtarj" >
+                                    <input type="number" id="numtarj" placeholder="Numeros de la tarjeta" value="" size="95%" maxlength="16" class='barra' />
+                            </label>
+                            <label for="vtotarj">
+                                        <input type="number" id="vtotarj" placeholder="Vto" value="" size="15%" class='barra' />
+                            </label>
+                            <label for="codigotarj">
+                                <input type="number" id="codigotarj" placeholder="Codigo" value="" size="15%" maxlength="4" class='barra' />
+                            </label>
+                            <div class='tipo-tarj'>
+                                <label for="class-tarj" >
+                                    <input type="radio"  id="class-tarj"/> <i class="fab fa-cc-visa"></i>
+                            </label> 
+                            <label for="class-tarj" >
+                                <input type="radio"  id="class-tarj"/> <i class="fab fa-cc-mastercard"></i>
+                                </label> 
+                                <label for="class-tarj" >
+                                    <input type="radio"  id="class-tarj"/><i class="fab fa-cc-amex"></i> 
+                                </label> 
+                                <label for="class-tarj" >
+                                    <input type="radio"  id="class-tarj"/> <i class="fas fa-money-check-alt"></i>
+                                </label> 
+                            </div>
+                    </div>
+                    <hr>
+                    <label for="tyc" >
+                        <input type="checkbox"  id="tyc"/>Acepta terminos y condiciones de pago
+                    </label>
+
+
+                    </div>
+
+
+                    </section> 
+                </div>
+
+                <div class="confirm-buy">
+                            <div class="no-buy-go-product">
+                            <button class="go-product  barra-container">
+                                <a href="product.html" > Volver  </a>
+                            </button>
+                            </div>
+                            <div  tabindex="1" class="buy ">
+                                <button href="#" class="buy-buttom  barra-container " >Pagar</button>
+                            </div>
+                </div>
+
+                </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="logo-head-mobile foot">
+                <a href="http://localhost:1300/">
+                    <h2>Three Coffee</h2>
+                    <img class="logo" src="..//images/logoEliza.jpg" alt="logotipo">
+                </a>
+            </div>
+            <article>
+                <h3>Dudas</h3>
+                <ul>
+                    <li><a>Medios de pago</a></li>
+                    <li><a>Envíos</a></li>
+                    <li><a>¿Cómo comprar?</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a>Nuestra historia</a></li>
+                    <li><a>Ubicación</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Contacto</h3>
+                <ul class="contact">
+                    <li><a class="material-icons">phone_in_talk</a></li>
+                    <li><a href="#"><img src="..//images/instagram.svg"></a></li>
+                    <li><a class="material-icons">email</a></li>
+                    <li><a class="material-icons">facebook</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Newsletter</h3>
+                <ul class="newss">
+                    <li>¡Enterate de nuestras ofertas antes que nadie!</li>
+                    <li>
+                        <div class="search-bar newsletter-bar">
+                            <input type="email" name="email" id="" placeholder="Tu email aquí">
+                            <button type="submit"><i class="material-icons">send</i></button>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </footer>
+    </footer>
+<script src="Js/sidebar.js"></script>
 </body>
 </html>

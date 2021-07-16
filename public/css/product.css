@@ -1,0 +1,165 @@
+:root{
+   --blue: #00353F;
+   --cyan: #08C5D1;
+   --honey: #FFBF66;
+   --capuchino:#D46F4D;
+   --coffee: #430C05;
+}
+
+.title{
+   margin: 5%;
+   text-align: center;
+   font-size: 20px;
+   color: var(--coffee);
+}
+
+.subtitle{
+   margin: 5px 30px 20px 30px; 
+   text-align: right; 
+   font-size: 15px
+}
+
+.card{
+   box-shadow: 5px 5px 10px 0px var(--cyan);
+   border-radius: 30px;
+   margin: 0 auto;
+   text-align: center;
+   background-color:rgb(245, 237, 226);
+   margin-bottom: 10%;
+   width: 70%;
+   color: var(--coffee);
+   position: relative;
+}
+ 
+.card-header{  
+   background-color: var(--cyan);
+   font-size: 20px;
+   height: 50px;
+}
+ .card-title{
+   padding-top: 5px;
+ }
+.card-img{
+   max-width: 100%;
+   border-radius: 50%;
+}
+.card-img:hover{
+   animation: rotate;
+   animation-duration: 2s;
+}
+ @keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.vermas{
+   position: relative;
+   left: 80px;
+   top:50px
+}
+ .card-list{
+   height: 50%;
+   padding-left:0;
+   list-style:none;
+   background-color: rgba(228, 177, 100, 0.2);
+   display: none;
+   }
+  
+  
+   
+ .buttom{
+   color:var(--honey);
+   display: flex;
+   justify-content:center;
+   align-content: center;
+   margin: 0 auto;
+   height: 50px;
+   width: 50px;
+   background-color:
+   var(--cyan) ;
+   border-radius: 100%;
+}
+.buttom:hover{
+   transform:scale(0.8);
+   transition:all 2s ease-in-out;
+}
+
+
+.buttom i{
+   margin: auto;
+   font-size: 35px;
+}
+
+
+                      /* MEDIA  QUEARIES */
+
+/* CEL */
+@media (min-width: 400px){
+   .container-product{
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 650px){
+   .container-product{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      justify-content: space-evenly;
+      margin: 2.2%;
+   }
+   .subtitle{
+      margin: 0 50px 30px 10rem
+   }
+   .card{
+      width: 40%;
+      margin: 2%;
+   }
+   .card-list{
+      height: 100px;
+   }
+ 
+}
+
+/* TABLET */
+@media (min-width: 768px){
+   .container-product{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      justify-content: space-evenly;
+      margin:0 5% 1% 5% ;
+   }
+   .subtitle{
+      margin: 0 50px 30px 20rem
+   }
+   .card{ 
+      width: 30%;
+      margin: 1.2%;
+   }
+   .card-list{
+      height: 115px;
+   }
+ 
+}
+
+/* DESKTOP */
+@media (min-width: 1200px){
+   .container-product{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 2%;
+   }
+   .card{
+      width: 20%;
+      margin: 1%;
+   } 
+}
+ 

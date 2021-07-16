@@ -1,7 +1,7 @@
 {
   "name": "grupo_13_three",
   "version": "1.0.0",
-  "description": "Es una e-commerce orientada a los amantes del café de todas las edades que deseen comprar desde la comodidad de su hogar.\r Ofrecemos una gran variedad de productos en donde se destacan nuestros granos importados de Colombia o Brasil, Té negro cultivado San Luis, capsulas Machiato y Nespresso, filtros en variedad, café recién molido y cafeteras para todos los gustos.",
+  "description": "Somos dos estudiantes de Programacion Web Full Stack de Formar que junto a Digital House nos encargaron de inicializar un Proyecto Integrador con Metodologias Agiles: Es una e-commerce orientada a los amantes del café de todas las edades que deseen comprar desde la comodidad de su hogar.\r Ofrecemos una gran variedad de productos en donde se destacan nuestros granos importados de Colombia o Brasil, Té negro cultivado San Luis, capsulas Machiato y Nespresso, filtros en variedad, café recién molido y cafeteras para todos los gustos.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
