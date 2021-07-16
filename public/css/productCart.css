@@ -9,71 +9,130 @@
 .container{
     background-color: white;
 }
- .form-client-email{
-     margin: 0 50px 20px 50px;
-     height: 50px;
+ .barra-container{
      background-color:#08c4d12c;
      box-shadow: 8px 5px 5px 1px var(--capuchino);
 border-radius: 2rem;
-text-align: center;
 color: var(--coffee);
-
  }
- .form-client, .form-email{
-     line-height: 1.3;   
- }
-
+ 
  .barra{
 background-color: inherit;
      border-style:hidden;
      text-align: center;
+     width: 60%;
+color: var(--coffee);
+
  }
 
  .product-cart{
     width: 90%;
     margin: 0 auto;
+ }
+ .card-cart{
+    position: relative;
+   width: 110%;
+   animation-name: slidein;
+  animation-duration: 2s;
 
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+}
+ @keyframes slidein {
+   from {
+     transform: translateX(200%);
+   }
+ 
+   to {
+     transform: translateX(0%);
+   }
  }
- .checktrash{
-     height: 13px;
-    margin-left: 53px;
-    margin-right: 53px;
-    display: flex;
-    justify-content: space-between;
- }
+ 
+
 
  .trash {
      color: var(--cyan);
      height: 15px;
-     border-radius: 10px;
 border-color: white; 
+position: relative;
+left:73%;
+bottom:2px
 }
 .trash i{
     display: flex;
     font-size: 12px;
-margin-bottom: 15px;
-
 }
-
-
+#select-prod{
+    position: relative;
+    left: 15%;
+}
+.card-cart{
+    margin-bottom: 10px;
+    
+}
+.card-title{
+font-size: 15px;
+}
  .card-list, .card-precio{
      display: none;
  }
 
- .cantidad, #cantidad, #Total{
+ .cantidad, #cantidad{
      height: 30px;
+ }
+ #cantidad{
+     width: 80px;
  }
  .cantidad{
     margin: 2px 0 5px 0;
-
+    text-align: center;
  }
 
+#detailCart{
+ margin: 35px 10px 10px 45px;}
+
+ .datos-personales{
+ display: flex;
+ flex-direction: column;
+height:100px;
+line-height: 2;
+margin: 35px 15px 15px 35px;
+text-align: center;
+color: var(--coffee);
+
+}
+
+#envio-retiro{
+    height: 240px;
+    color: var(--coffee);
+}
+
+.hs{
+    width: 90px;
+}
+.datos-pago{
+    height: 230px;
+}
+.datos-tarjeta, .tipo-tarj{
+    display: grid;
+    grid-template-columns: repeat(2,60%);
+    justify-content: space-evenly;
+    margin: 0 auto}
+
+    #nombretarj, #numtarj{
+        width: 150px;
+    }
 
 .confirm-buy{
     height: 3rem;
     display:flex;
     justify-content:space-evenly;
-    margin-top: 2rem;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
 }
 .no-buy-go-product,.buy{
 display: flex;
@@ -85,10 +144,97 @@ display: flex;
 
 
 
-@media (min-width: 400px){
+
+
+
+
+
+@media (max-width: 570px){
     .product-cart{
         display: grid;
-        grid-template-columns: repeat(2, 1fr)
-    }
-
+        grid-template-columns: repeat(2, 1fr);
 }
+.trash {left:68%}
+#envio-retiro{
+    width: 300px;
+height: 400px;
+
+    }   
+    .detailCart{
+margin: 0 auto;
+
+    }
+}
+
+@media (min-width: 400px) and (max-width: 445px){.trash {left:70%}}
+@media (min-width: 445px) and (max-width: 480px){.trash {left:71%}}
+@media (min-width: 481px) and (max-width: 522px){.trash {left:72%}}
+@media (min-width: 522px) and (max-width: 570px){.trash {left:73%}}
+
+
+@media (min-width: 565px) and (max-width: 767px){
+    .product-cart{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+justify-content: right;
+}
+.trash {left:68%}
+
+.datos-personales{
+margin: 35px 55px 15px 90px;
+}    
+}
+@media (min-width: 615px) {
+ 
+    .product-cart{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+justify-content:space-evenly;
+}
+.trash {left:66%}
+
+.datos-personales{
+margin: 35px 55px 15px 90px;
+}    
+}
+@media (max-width: 992px) {
+.card{
+    margin: 0 auto;
+ width: 80%;
+}
+.trash {left:71%}
+.datos-personales{
+    margin: 35px 130px 15px 130px;
+    } 
+}
+@media (min-width: 700px) and (max-width: 760px){
+    .trash {left:72%}
+.datos-personales{
+    margin: 35px 150px 15px 150px;
+    } }
+@media (min-width: 761px) and (max-width: 800px){.trash {left:73%}.datos-personales{
+    margin: 35px 170px 15px 170px;
+    }}
+@media (min-width: 801px) and (max-width: 851px){.trash {left:74%}.datos-personales{
+    margin: 35px 190px 15px 190px;
+    }}
+@media (min-width: 851px) and (max-width: 930px){.trash {left:75%}.datos-personales{
+    margin: 35px 190px 15px 190px;
+}}
+@media (min-width: 930px) and (max-width: 992px){
+    .trash {left:76%}}
+    
+    @media (min-width: 993px){
+        .product-cart{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+    justify-content:space-evenly;
+    }
+    .card{
+        margin: 0 auto;
+     width: 70%;
+    }
+    .trash {left:76%}
+    .datos-personales{
+        margin: 35px 190px 15px 190px;}
+    }

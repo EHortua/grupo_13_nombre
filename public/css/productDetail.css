@@ -1,0 +1,83 @@
+main{
+    height: 900px;
+}
+.container-title{
+  display: none;
+}
+.card-list{
+    display: grid;
+
+}
+.container-title{
+    text-align: right;
+    margin:0;
+}
+
+.container-product{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+h2{
+    text-align: center;
+
+}
+.card-detail{
+    background-color: white;
+
+}
+.detail{
+font-size: 20px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 5px;
+    width: 95%;
+    position: 1;
+    animation-duration: 4s;
+  animation-name: slidein;}
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 200%;
+      margin-left:5%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  section{
+      margin-bottom: 80px;
+  }
+  .w3-content{
+      margin-top: 10px;
+  }
+
+  @media (max-width: 728px){
+
+  main{
+       width: 80%;
+   }
+   .w3-container{
+       width: 100%;
+       margin-top: 10px;
+      margin: 0 auto;
+       text-align: right;
+   }
+   .card-detail{
+    font-size: 15px;
+   }
+   .detail{
+
+    height: 210px;
+       
+   }
+  }
