@@ -13,9 +13,6 @@ Ahora estoy viviendo en CABA, Argentina cuna de numerosas cafeterías antiguas d
 #### Juliana Lezcano
 Estudiante de Programación en Formar y de Contaduría en la UBA , tengo 28 años,  soy argentina, me gusta el café desde que tengo memoria, admirando su historia desde su creacion hasta los tiempos modernos, sus diferentes texturas, sabores y combinaciones, recorriendo diferentes lugares para buscar el mejor hasta que decidi ponerme manos a la obra junto con personas que comparten el mismo conocimiento y placer que yo...tomar un buen cafe
 
-#### Julian Fernandez
- Argentino de 23 años,fui estudiante de comercio Internacional y ahora en el curso FORMAR estudio para ser un programador full-stack y autodidacta. Apasionado tanto de la programación como del café y sus diferentes gustos. 
-
 
 ### Páginas de referencia
 * https://thecoffeestore.com/
